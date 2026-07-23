@@ -40,4 +40,26 @@ def main():
         if opcao == '1':
             c = ler_temperatura('Celsius')
             print(f'{c}ºC = {celsius_para_fahrenheit(c):.2f}ºF')
+            print(f'{c}ºC = {celsius_para_kelvin(c):.2f}K')
+
+        elif opcao == '2':
+            f = ler_temperatura('Fahrenheit')
+            print(f'{f}ºF = {fahrenheit_para_celsius(f):.2f}ºC')
+            print(f'{f}ºF = {fahrenheit_para_kelvin(f):.2f}K')
+
+        elif opcao == '3':
+            k = ler_temperatura('Kelvin')
+            print(f'{k}K = {kelvin_para_celsius(k):.2f}ºC')
+            print(f'{k}K = {kelvin_para_fahrenheit(k):.2f}ºF')
+
+        elif opcao == '0':
+            print('Até mais!')
+            break
+
+        else:
+            print('Opção inválida. Tente novamente.')
+
+if __name__ == "__main__":
+    main()
+
 
